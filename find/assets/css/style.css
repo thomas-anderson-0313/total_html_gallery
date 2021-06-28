@@ -1,0 +1,310 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Permanent+Marker&family=Roboto:wght@300;400;500&display=swap');
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d8f3ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #00bb2d !important;
+}
+
+.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+    font-size: large;
+}
+
+.navbar-brand img {
+    width: 5em;
+}
+
+.active a {
+    color: #034a75 !important;
+}
+
+.nav-link:hover {
+    color: #034a75 !important;
+}
+
+a {
+    color: #d8f3ff !important;
+    font-size: 1.6rem;
+}
+
+.navbar-toggler-icon {
+    font-size: 2rem;
+}
+
+
+/* Hero Image */
+
+#hero-outer {
+    height: 35rem;
+    width: 100%;
+    min-width: 33rem;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: 7rem;
+}
+
+#hero-image {
+    height: auto;
+    width: 100%;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+h1 {
+    color: #034a75;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+
+/* CATEGORIES */
+
+.category a h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #d8f3ff;
+    position: absolute;
+    left: 12rem;
+    top: 7rem;
+}
+
+.category a h2:hover {
+    color: #034a75;
+}
+
+.category a img {
+    width: 30rem;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.category:hover a img {
+    border: .2em #034a75 solid;
+}
+
+
+/* MAP AND BUTTONS */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+    min-width: 33rem;
+}
+
+.container figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    margin-top: 2rem;
+    opacity: .9;
+}
+
+
+/* botton style from https://www.w3schools.com/csS/css3_buttons.asp */
+
+.btn-style {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 2rem;
+    padding: 1.2em .5em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-pos1 {
+    top: 48%;
+    left: 60%;
+}
+
+.btn-pos2 {
+    top: 33%;
+    left: 62%;
+}
+
+.btn-pos3 {
+    top: 36%;
+    left: 36%;
+}
+
+.btn-pos4 {
+    top: 47%;
+    left: 28%;
+}
+
+.btn-pos5 {
+    top: 56%;
+    left: 43%;
+}
+
+.container .btn-style:hover {
+    font-size: 2.5rem;
+}
+
+
+/* about.html */
+
+.container-fluid .img-thumbnail {
+    height: 20rem;
+    width: auto;
+    margin-right: 3rem;
+}
+
+figure .img-thumbnail {
+    height: 30rem;
+    width: auto;
+}
+
+.container-fluid p,
+em {
+    font-size: 1.5rem;
+    color: #034a75;
+}
+
+.container-fluid h2 {
+    margin-top: 8rem;
+    color: #034a75;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* FORM in contact.html */
+
+.btn-submit {
+    background-color: #00bb2d;
+    color: #d8f3ff;
+    font-size: 1.6rem;
+}
+
+.btn-submit:hover {
+    background-color: #d8f3ff;
+    color: #034a75;
+}
+
+fieldset {
+    font-family: 'Roboto', sans-serif;
+    color: #034a75;
+}
+
+fieldset>legend {
+    font-size: 2rem;
+}
+
+.form-group>label,
+.form-group>input,
+.form-control,
+option {
+    font-size: 1.6rem;
+}
+
+
+/* style h3 in gallety.html */
+
+h3 {
+    width: 90%;
+    color: #034a75;
+    font-size: 2.5rem;
+    border-bottom: .3em solid #034a75;
+    text-transform: uppercase;
+    margin: 2em 0 0 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 10rem;
+    padding: .5em;
+    background-color: #00bb2d;
+    color: #d8f3ff;
+    font-family: 'Roboto', sans-serif;
+    min-width: 33rem;
+}
+
+small {
+    font-size: 1rem;
+}
+
+.social-icon-shadow a i:hover {
+    color: #034a75;
+}
+
+
+/* media queries of the link to categories in index.html */
+
+@media screen and (min-width: 20.625em) {
+    .navbar-brand {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 28.125em) {
+    .category a h2 {
+        left: 17rem;
+    }
+    /* media queries of the navbar-brand */
+    .navbar-brand {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .category a h2 {
+        left: 12rem;
+    }
+    #tab-screen {
+        left: 32rem;
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .category a h2 {
+        left: 15rem;
+    }
+    #tab-screen {
+        left: 44rem;
+        top: 7rem;
+    }
+    /* media queries contact.html */
+    aside .row {
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .category a h2 {
+        left: 12rem;
+    }
+    #tab-screen {
+        left: 12rem;
+    }
+}

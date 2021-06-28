@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gallery</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./gallery.css" />
+
+    <link rel="shortcut icon" href="../icons/elect.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white col-12">
+        <button class="navbar-toggler d-lg-none border-0" type="button" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">HOTELES<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../3links/index.html">NATURALEZA<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../electronic/index.html">ELECTRÓNICA<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../filter/index.html">MERCADO<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../find/index.html">VIAJE<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section>
+      <button
+        type="button"
+        class="btn btn-danger list active"
+        data-filter="all"
+      >
+        All
+      </button>
+      <button type="button" class="btn btn-danger list" data-filter="mobile">
+        Mobiles
+      </button>
+      <button type="button" class="btn btn-danger list" data-filter="camera">
+        Cameras
+      </button>
+      <button type="button" class="btn btn-danger list" data-filter="watch">
+        Watch
+      </button>
+      <button type="button" class="btn btn-danger list" data-filter="shoe">
+        Shoe
+      </button>
+      <button type="button" class="btn btn-danger list" data-filter="headphone">
+        Headphone
+      </button>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 itemBox mobile">
+          <img src="./images/mobile1.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox camera">
+          <img src="./images/camera1.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox watch">
+          <img src="./images/watch1.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox shoe">
+          <img src="./images/shoe1.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox headphone">
+          <img src="./images/headphone1.jpg" />
+        </div>
+
+        <div class="col-lg-3 col-md-6 itemBox mobile">
+          <img src="./images/mobile2.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox camera">
+          <img src="./images/camera2.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox watch">
+          <img src="./images/watch2.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox shoe">
+          <img src="./images/shoe2.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox headphone">
+          <img src="./images/headphone2.jpg" />
+        </div>
+
+        <div class="col-lg-3 col-md-6 itemBox mobile">
+          <img src="./images/mobile3.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox camera">
+          <img src="./images/camera3.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox watch">
+          <img src="./images/watch3.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox shoe">
+          <img src="./images/shoe3.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox headphone">
+          <img src="./images/headphone3.jpg" />
+        </div>
+
+        <div class="col-lg-3 col-md-6 itemBox mobile">
+          <img src="./images/mobile4.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox watch">
+          <img src="./images/watch4.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox shoe">
+          <img src="./images/shoe4.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-6 itemBox headphone">
+          <img src="./images/headphone4.jpg" />
+        </div>
+
+        <div class="col-lg-3 col-md-6 itemBox mobile">
+          <img src="./images/mobile5.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".itemBox").show("1000");
+          } else {
+            $(".itemBox")
+              .not("." + value)
+              .hide("1000");
+            $(".itemBox")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+        $(".list").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
